@@ -12,12 +12,17 @@ import MBProgressHUD
 class BaseViewController: UIViewController {
 
     func showLoader() {
-        
-        MBProgressHUD.showAdded(to: view, animated: true)
+        DispatchQueue.main.async { [weak self] in
+            guard let strongSelf = self else { return }
+            MBProgressHUD.showAdded(to: strongSelf.view, animated: true)
+        }
     }
     
     func hideLoader() {
-        MBProgressHUD.hide(for: view, animated: true)
+        DispatchQueue.main.async { [weak self] in
+            guard let strongSelf = self else { return }
+            MBProgressHUD.hide(for: strongSelf.view, animated: true)
+        }
     }
     
 }

@@ -17,9 +17,23 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="lxv-45-Sdy">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </mapView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="lxv-45-Sdy" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Cmf-Ea-oMb"/>
+                            <constraint firstItem="lxv-45-Sdy" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="W4L-QJ-WHO"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="lxv-45-Sdy" secondAttribute="trailing" id="a4w-nr-Hcf"/>
+                            <constraint firstAttribute="bottom" secondItem="lxv-45-Sdy" secondAttribute="bottom" id="jJP-k0-uYD"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="mapView" destination="lxv-45-Sdy" id="IGp-kY-4ha"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
