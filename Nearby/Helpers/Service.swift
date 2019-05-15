@@ -29,7 +29,7 @@ class NetworkService: Service {
         dateFormatter.dateFormat = "YYYYMMDD"
         let versionString = dateFormatter.string(from: Date())
         
-        let urlString = "https://api.foursquare.com/v2/venues/search?client_id=KOGEX4EPMA3OBMOUIJGP22CBCXJVQ1BRLH3W5GLDBB0C2C4L&client_secret=ED3CGJUY1PITOSOBLENAQBJB1TEBD5CGQORLKKOO5WXRLREO&ll=\(latitude),\(longitude)&scenario=browse&categoryId=4d4b7105d754a06374d81259&v=\(versionString)"
+        let urlString = "https://api.foursquare.com/v2/venues/search?client_id=KOGEX4EPMA3OBMOUIJGP22CBCXJVQ1BRLH3W5GLDBB0C2C4L&client_secret=ED3CGJUY1PITOSOBLENAQBJB1TEBD5CGQORLKKOO5WXRLREO&ll=\(latitude),\(longitude)&scenario=browse&categoryId=4d4b7105d754a06374d81259&v=\(versionString)&radius=5000"
         
         guard let url = URL(string: urlString) else {
             completion(.failure(ConnectionError.couldNotGetDetails))

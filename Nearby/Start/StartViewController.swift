@@ -12,7 +12,7 @@ class StartViewController: BaseViewController {
 
     @IBOutlet weak var mapView: MKMapView! {
         didSet {
-            let coordinateRegion = MKCoordinateRegion(center: startLocation, latitudinalMeters: CLLocationDistance(integerLiteral: 500), longitudinalMeters: CLLocationDistance(integerLiteral: 500))
+            let coordinateRegion = MKCoordinateRegion(center: startLocation, latitudinalMeters: CLLocationDistance(integerLiteral: 5000), longitudinalMeters: CLLocationDistance(integerLiteral: 5000))
             mapView.setRegion(coordinateRegion, animated: true)
             
         }
@@ -43,13 +43,15 @@ class StartViewController: BaseViewController {
         let coordinate = mapView.centerCoordinate
         
         service.fetchVenues(latitude: coordinate.latitude, longitude: coordinate.longitude) { [weak self] (result) in
-            self?.hideLoader()
+            guard let strongSelf = self else { return }
+            strongSelf.hideLoader()
             
             guard let venues = try? result.get() else {
                 // TODO:- show error
                 return
             }
-            print(venues)
+        strongSelf.mapView.removeAnnotations(strongSelf.mapView.annotations)
+        strongSelf.mapView.addAnnotations(MapAnnotation.annotations(for: venues))
         }
     }
     

@@ -22,4 +22,12 @@ class MapAnnotation: NSObject, MKAnnotation {
         
         super.init()
     }
+    
+    static func annotations(for venue: [Venue]) -> [MapAnnotation] {
+        
+        return venue.map { (venue) -> MapAnnotation in
+            return MapAnnotation.init(title: venue.name, subtitle: venue.location.address, coordinate: venue.location.coordinate)
+        }
+        
+    }
 }

@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import MapKit
 
 struct Root: Codable {
     let response: Response
@@ -27,7 +28,11 @@ struct Venue: Codable {
 
 struct Location: Codable {
     let address: String
-    let lat, lng: Double
+    private let lat, lng: Double
+    
+    var coordinate: CLLocationCoordinate2D {
+        return CLLocationCoordinate2D(latitude: CLLocationDegrees(lat), longitude: CLLocationDegrees(lng))
+    }
 }
 
 //let root = try JSONDecoder().decode(Root.self, from: data)
