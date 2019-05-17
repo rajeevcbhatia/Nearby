@@ -34,6 +34,3 @@ struct Location: Codable {
         return CLLocationCoordinate2D(latitude: CLLocationDegrees(lat), longitude: CLLocationDegrees(lng))
     }
 }
-
-//let root = try JSONDecoder().decode(Root.self, from: data)
-//print(root.response.venues)
