@@ -1,26 +1,29 @@
 //
-//  StartViewController.swift
+//  MapViewController.swift
 //  Nearby
 //
-//  Created by Rajeev Bhatia on 15/05/19.
+//  Created by Rajeev Bhatia on 18/05/19.
 //  Copyright © 2019 rajeev. All rights reserved.
 //
 
 import UIKit
 import MapKit
-class StartViewController: BaseViewController {
-    
+
+class MapViewController: BaseViewController {
+
     var venuesForCurrentRegion = [Venue]() {
         didSet {
             showAnnotations(venues: venuesForCurrentRegion)
         }
     }
-
+    
     @IBOutlet weak var mapView: MKMapView! {
         didSet {
             let coordinateRegion = MKCoordinateRegion(center: startLocation, latitudinalMeters: CLLocationDistance(integerLiteral: 5000), longitudinalMeters: CLLocationDistance(integerLiteral: 5000))
             mapView.setRegion(coordinateRegion, animated: true)
             mapView.delegate = self
+            
+            fetchVenuesForCurrentCenter()
         }
     }
     
@@ -29,18 +32,11 @@ class StartViewController: BaseViewController {
     
     init(service: Service) {
         self.service = service
-        super.init(nibName: nil, bundle: nil)
+        super.init(nibName: String(describing: MapViewController.self), bundle: nil)
     }
     
     required init?(coder aDecoder: NSCoder) {
-        service = NetworkService.shared
-        super.init(coder: aDecoder)
-    }
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-        fetchVenuesForCurrentCenter()
+        fatalError("init(coder:) has not been implemented")
     }
     
     private func showAnnotations(venues: [Venue]) {
@@ -74,7 +70,7 @@ class StartViewController: BaseViewController {
     
 }
 
-extension StartViewController: MKMapViewDelegate {
+extension MapViewController: MKMapViewDelegate {
     func mapView(_ mapView: MKMapView, didSelect view: MKAnnotationView) {
         
         mapView.deselectAnnotation(view.annotation, animated: true)

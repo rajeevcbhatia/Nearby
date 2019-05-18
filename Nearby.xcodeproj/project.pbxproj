@@ -8,30 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		08863230CD1EF4C6AB0379F9 /* Pods_NearbyTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F666E625997580C4A5AE50D1 /* Pods_NearbyTests.framework */; };
+		9A3205C02290721800E7911D /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A3205BE2290721800E7911D /* MapViewController.swift */; };
+		9A3205C12290721800E7911D /* MapViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A3205BF2290721800E7911D /* MapViewController.xib */; };
+		9A3205C322909BB200E7911D /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A3205C222909BB200E7911D /* main.swift */; };
 		9A924BF2228C6D2200463602 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A924BF1228C6D2200463602 /* AppDelegate.swift */; };
-		9A924BF7228C6D2200463602 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A924BF5228C6D2200463602 /* Main.storyboard */; };
 		9A924BF9228C6D2400463602 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9A924BF8228C6D2400463602 /* Assets.xcassets */; };
 		9A924BFC228C6D2400463602 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A924BFA228C6D2400463602 /* LaunchScreen.storyboard */; };
-		9A924C07228C6D2400463602 /* NearbyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A924C06228C6D2400463602 /* NearbyTests.swift */; };
-		9A924C12228C6D2400463602 /* NearbyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A924C11228C6D2400463602 /* NearbyUITests.swift */; };
 		9A924C20228C869400463602 /* ResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A924C1F228C869400463602 /* ResponseModel.swift */; };
-		9A924C26228C870000463602 /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A924C25228C870000463602 /* StartViewController.swift */; };
 		9A924C28228C899900463602 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A924C27228C899900463602 /* BaseViewController.swift */; };
 		9A924C2A228CA5E200463602 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A924C29228CA5E200463602 /* Service.swift */; };
 		9A924C2C228CB6CA00463602 /* MapAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A924C2B228CB6CA00463602 /* MapAnnotation.swift */; };
-		C011B2A8415590C64B302258 /* Pods_NearbyUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 460167CA8C95A0781BF026A0 /* Pods_NearbyUITests.framework */; };
+		9A924C2F22900EA300463602 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A924C2E22900EA300463602 /* NetworkService.swift */; };
+		9A924C3222900F6F00463602 /* MockService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A924C3122900F6F00463602 /* MockService.swift */; };
+		9A924C342290352C00463602 /* MapViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A924C332290352C00463602 /* MapViewControllerTests.swift */; };
 		CB9B2B5E2024EF1A142EC2D2 /* Pods_Nearby.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3F5915E8B830137611240C7 /* Pods_Nearby.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		9A924C03228C6D2400463602 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 9A924BE6228C6D2100463602 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 9A924BED228C6D2100463602;
-			remoteInfo = Nearby;
-		};
-		9A924C0E228C6D2400463602 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 9A924BE6228C6D2100463602 /* Project object */;
 			proxyType = 1;
@@ -45,23 +39,24 @@
 		460167CA8C95A0781BF026A0 /* Pods_NearbyUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NearbyUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		645D70C7B3D4F6B79832028F /* Pods-NearbyUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NearbyUITests.release.xcconfig"; path = "Target Support Files/Pods-NearbyUITests/Pods-NearbyUITests.release.xcconfig"; sourceTree = "<group>"; };
 		8094A9879B33C704B5DBDB72 /* Pods-NearbyTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NearbyTests.debug.xcconfig"; path = "Target Support Files/Pods-NearbyTests/Pods-NearbyTests.debug.xcconfig"; sourceTree = "<group>"; };
+		9A3205BE2290721800E7911D /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		9A3205BF2290721800E7911D /* MapViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MapViewController.xib; sourceTree = "<group>"; };
+		9A3205C222909BB200E7911D /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		9A924BEE228C6D2200463602 /* Nearby.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Nearby.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A924BF1228C6D2200463602 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		9A924BF6228C6D2200463602 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9A924BF8228C6D2400463602 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9A924BFB228C6D2400463602 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9A924BFD228C6D2400463602 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9A924C02228C6D2400463602 /* NearbyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NearbyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		9A924C06228C6D2400463602 /* NearbyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearbyTests.swift; sourceTree = "<group>"; };
 		9A924C08228C6D2400463602 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9A924C0D228C6D2400463602 /* NearbyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NearbyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		9A924C11228C6D2400463602 /* NearbyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearbyUITests.swift; sourceTree = "<group>"; };
-		9A924C13228C6D2400463602 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9A924C1F228C869400463602 /* ResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseModel.swift; sourceTree = "<group>"; };
-		9A924C25228C870000463602 /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
 		9A924C27228C899900463602 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		9A924C29228CA5E200463602 /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
 		9A924C2B228CB6CA00463602 /* MapAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapAnnotation.swift; sourceTree = "<group>"; };
+		9A924C2E22900EA300463602 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		9A924C3022900F6F00463602 /* NearbyTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NearbyTests-Bridging-Header.h"; sourceTree = "<group>"; };
+		9A924C3122900F6F00463602 /* MockService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockService.swift; sourceTree = "<group>"; };
+		9A924C332290352C00463602 /* MapViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewControllerTests.swift; sourceTree = "<group>"; };
 		A18D05EA116791EA7580E7D2 /* Pods-Nearby.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Nearby.debug.xcconfig"; path = "Target Support Files/Pods-Nearby/Pods-Nearby.debug.xcconfig"; sourceTree = "<group>"; };
 		D3F5915E8B830137611240C7 /* Pods_Nearby.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Nearby.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4FC7A1281C57E67C9154912 /* Pods-NearbyUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NearbyUITests.debug.xcconfig"; path = "Target Support Files/Pods-NearbyUITests/Pods-NearbyUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -86,14 +81,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9A924C0A228C6D2400463602 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				C011B2A8415590C64B302258 /* Pods_NearbyUITests.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -112,7 +99,6 @@
 			children = (
 				9A924BF0228C6D2200463602 /* Nearby */,
 				9A924C05228C6D2400463602 /* NearbyTests */,
-				9A924C10228C6D2400463602 /* NearbyUITests */,
 				9A924BEF228C6D2200463602 /* Products */,
 				CC9041E5DB5C9FDAC081A14D /* Pods */,
 				507679ED32645D8882F0B070 /* Frameworks */,
@@ -124,7 +110,6 @@
 			children = (
 				9A924BEE228C6D2200463602 /* Nearby.app */,
 				9A924C02228C6D2400463602 /* NearbyTests.xctest */,
-				9A924C0D228C6D2400463602 /* NearbyUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -132,14 +117,15 @@
 		9A924BF0228C6D2200463602 /* Nearby */ = {
 			isa = PBXGroup;
 			children = (
-				9A924C24228C86EC00463602 /* Start */,
+				9A924C2D22900E9100463602 /* Network */,
+				9A924C24228C86EC00463602 /* Map */,
 				9A924C23228C86E600463602 /* Helpers */,
 				9A924BF1228C6D2200463602 /* AppDelegate.swift */,
-				9A924BF5228C6D2200463602 /* Main.storyboard */,
 				9A924BF8228C6D2400463602 /* Assets.xcassets */,
 				9A924BFA228C6D2400463602 /* LaunchScreen.storyboard */,
 				9A924BFD228C6D2400463602 /* Info.plist */,
 				9A924C22228C86C200463602 /* Model */,
+				9A3205C222909BB200E7911D /* main.swift */,
 			);
 			path = Nearby;
 			sourceTree = "<group>";
@@ -147,24 +133,18 @@
 		9A924C05228C6D2400463602 /* NearbyTests */ = {
 			isa = PBXGroup;
 			children = (
-				9A924C06228C6D2400463602 /* NearbyTests.swift */,
 				9A924C08228C6D2400463602 /* Info.plist */,
+				9A924C3122900F6F00463602 /* MockService.swift */,
+				9A924C3022900F6F00463602 /* NearbyTests-Bridging-Header.h */,
+				9A924C332290352C00463602 /* MapViewControllerTests.swift */,
 			);
 			path = NearbyTests;
-			sourceTree = "<group>";
-		};
-		9A924C10228C6D2400463602 /* NearbyUITests */ = {
-			isa = PBXGroup;
-			children = (
-				9A924C11228C6D2400463602 /* NearbyUITests.swift */,
-				9A924C13228C6D2400463602 /* Info.plist */,
-			);
-			path = NearbyUITests;
 			sourceTree = "<group>";
 		};
 		9A924C22228C86C200463602 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				9A924C2B228CB6CA00463602 /* MapAnnotation.swift */,
 				9A924C1F228C869400463602 /* ResponseModel.swift */,
 			);
 			path = Model;
@@ -175,17 +155,25 @@
 			children = (
 				9A924C27228C899900463602 /* BaseViewController.swift */,
 				9A924C29228CA5E200463602 /* Service.swift */,
-				9A924C2B228CB6CA00463602 /* MapAnnotation.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
 		};
-		9A924C24228C86EC00463602 /* Start */ = {
+		9A924C24228C86EC00463602 /* Map */ = {
 			isa = PBXGroup;
 			children = (
-				9A924C25228C870000463602 /* StartViewController.swift */,
+				9A3205BE2290721800E7911D /* MapViewController.swift */,
+				9A3205BF2290721800E7911D /* MapViewController.xib */,
 			);
-			path = Start;
+			path = Map;
+			sourceTree = "<group>";
+		};
+		9A924C2D22900E9100463602 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				9A924C2E22900EA300463602 /* NetworkService.swift */,
+			);
+			path = Network;
 			sourceTree = "<group>";
 		};
 		CC9041E5DB5C9FDAC081A14D /* Pods */ = {
@@ -242,25 +230,6 @@
 			productReference = 9A924C02228C6D2400463602 /* NearbyTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		9A924C0C228C6D2400463602 /* NearbyUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 9A924C1C228C6D2400463602 /* Build configuration list for PBXNativeTarget "NearbyUITests" */;
-			buildPhases = (
-				CFFA30DEB8AF3BE13C85FA41 /* [CP] Check Pods Manifest.lock */,
-				9A924C09228C6D2400463602 /* Sources */,
-				9A924C0A228C6D2400463602 /* Frameworks */,
-				9A924C0B228C6D2400463602 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				9A924C0F228C6D2400463602 /* PBXTargetDependency */,
-			);
-			name = NearbyUITests;
-			productName = NearbyUITests;
-			productReference = 9A924C0D228C6D2400463602 /* NearbyUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -276,10 +245,7 @@
 					};
 					9A924C01228C6D2400463602 = {
 						CreatedOnToolsVersion = 10.2.1;
-						TestTargetID = 9A924BED228C6D2100463602;
-					};
-					9A924C0C228C6D2400463602 = {
-						CreatedOnToolsVersion = 10.2.1;
+						LastSwiftMigration = 1020;
 						TestTargetID = 9A924BED228C6D2100463602;
 					};
 				};
@@ -299,7 +265,6 @@
 			targets = (
 				9A924BED228C6D2100463602 /* Nearby */,
 				9A924C01228C6D2400463602 /* NearbyTests */,
-				9A924C0C228C6D2400463602 /* NearbyUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -311,18 +276,11 @@
 			files = (
 				9A924BFC228C6D2400463602 /* LaunchScreen.storyboard in Resources */,
 				9A924BF9228C6D2400463602 /* Assets.xcassets in Resources */,
-				9A924BF7228C6D2200463602 /* Main.storyboard in Resources */,
+				9A3205C12290721800E7911D /* MapViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		9A924C00228C6D2400463602 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		9A924C0B228C6D2400463602 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -371,28 +329,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		CFFA30DEB8AF3BE13C85FA41 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-NearbyUITests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
 		E42B3E233997C97F6EBEC7F9 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -424,10 +360,12 @@
 			files = (
 				9A924BF2228C6D2200463602 /* AppDelegate.swift in Sources */,
 				9A924C2C228CB6CA00463602 /* MapAnnotation.swift in Sources */,
+				9A3205C322909BB200E7911D /* main.swift in Sources */,
+				9A3205C02290721800E7911D /* MapViewController.swift in Sources */,
 				9A924C28228C899900463602 /* BaseViewController.swift in Sources */,
 				9A924C2A228CA5E200463602 /* Service.swift in Sources */,
 				9A924C20228C869400463602 /* ResponseModel.swift in Sources */,
-				9A924C26228C870000463602 /* StartViewController.swift in Sources */,
+				9A924C2F22900EA300463602 /* NetworkService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -435,15 +373,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9A924C07228C6D2400463602 /* NearbyTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		9A924C09228C6D2400463602 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				9A924C12228C6D2400463602 /* NearbyUITests.swift in Sources */,
+				9A924C3222900F6F00463602 /* MockService.swift in Sources */,
+				9A924C342290352C00463602 /* MapViewControllerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -455,22 +386,9 @@
 			target = 9A924BED228C6D2100463602 /* Nearby */;
 			targetProxy = 9A924C03228C6D2400463602 /* PBXContainerItemProxy */;
 		};
-		9A924C0F228C6D2400463602 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 9A924BED228C6D2100463602 /* Nearby */;
-			targetProxy = 9A924C0E228C6D2400463602 /* PBXContainerItemProxy */;
-		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		9A924BF5228C6D2200463602 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				9A924BF6228C6D2200463602 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		9A924BFA228C6D2400463602 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -640,6 +558,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = NearbyTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -649,6 +568,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.rajeev.NearbyTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "NearbyTests/NearbyTests-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Nearby.app/Nearby";
@@ -661,6 +582,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = NearbyTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -670,49 +592,10 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.rajeev.NearbyTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "NearbyTests/NearbyTests-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Nearby.app/Nearby";
-			};
-			name = Release;
-		};
-		9A924C1D228C6D2400463602 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = D4FC7A1281C57E67C9154912 /* Pods-NearbyUITests.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = NearbyUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.rajeev.NearbyUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = Nearby;
-			};
-			name = Debug;
-		};
-		9A924C1E228C6D2400463602 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 645D70C7B3D4F6B79832028F /* Pods-NearbyUITests.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = NearbyUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.rajeev.NearbyUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = Nearby;
 			};
 			name = Release;
 		};
@@ -742,15 +625,6 @@
 			buildConfigurations = (
 				9A924C1A228C6D2400463602 /* Debug */,
 				9A924C1B228C6D2400463602 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		9A924C1C228C6D2400463602 /* Build configuration list for PBXNativeTarget "NearbyUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				9A924C1D228C6D2400463602 /* Debug */,
-				9A924C1E228C6D2400463602 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
