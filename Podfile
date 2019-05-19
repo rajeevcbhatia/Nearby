@@ -8,14 +8,16 @@ target 'Nearby' do
   # Pods for Nearby
   pod 'MBProgressHUD', '~> 1.1.0'
 
-  target 'NearbyTests' do
-    inherit! :search_paths
-    # Pods for testing
-  end
-
-  target 'NearbyUITests' do
-    inherit! :search_paths
-    # Pods for testing
-  end
+  
 
 end
+
+target 'NearbyTests' do
+  inherit! :search_paths
+  # Pods for testing
+end
+
+target 'NearbyUITests' do
+  inherit! :search_paths
+  # Pods for testing
+  end

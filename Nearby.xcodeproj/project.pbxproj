@@ -7,10 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		061338A656F25F0E3F6A8F9B /* Pods_NearbyUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 460167CA8C95A0781BF026A0 /* Pods_NearbyUITests.framework */; };
-		08863230CD1EF4C6AB0379F9 /* Pods_NearbyTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F666E625997580C4A5AE50D1 /* Pods_NearbyTests.framework */; };
+		06D481B3AED2782530D908CD /* libPods-NearbyUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EA0AAB3D91479FF861DE21A3 /* libPods-NearbyUITests.a */; };
+		3C331AF1C705FC8AF12A1E98 /* libPods-NearbyTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 266BAB7C9B4C4EFA8863A05A /* libPods-NearbyTests.a */; };
 		9A1DADAE2290D620008289C2 /* NearbyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A1DADAD2290D620008289C2 /* NearbyUITests.swift */; };
 		9A1DADB62290D738008289C2 /* MockService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A924C3122900F6F00463602 /* MockService.swift */; };
+		9A1DADB82290E045008289C2 /* Identifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A1DADB72290E045008289C2 /* Identifiers.swift */; };
+		9A1DADB92290E049008289C2 /* Identifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A1DADB72290E045008289C2 /* Identifiers.swift */; };
+		9A1DADBA2290E04A008289C2 /* Identifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A1DADB72290E045008289C2 /* Identifiers.swift */; };
 		9A3205C02290721800E7911D /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A3205BE2290721800E7911D /* MapViewController.swift */; };
 		9A3205C12290721800E7911D /* MapViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A3205BF2290721800E7911D /* MapViewController.xib */; };
 		9A3205C322909BB200E7911D /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A3205C222909BB200E7911D /* main.swift */; };
@@ -45,13 +48,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		266BAB7C9B4C4EFA8863A05A /* libPods-NearbyTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-NearbyTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D0A0EC3D261A535A41D2F62 /* Pods-Nearby.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Nearby.release.xcconfig"; path = "Target Support Files/Pods-Nearby/Pods-Nearby.release.xcconfig"; sourceTree = "<group>"; };
-		460167CA8C95A0781BF026A0 /* Pods_NearbyUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NearbyUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		645D70C7B3D4F6B79832028F /* Pods-NearbyUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NearbyUITests.release.xcconfig"; path = "Target Support Files/Pods-NearbyUITests/Pods-NearbyUITests.release.xcconfig"; sourceTree = "<group>"; };
 		8094A9879B33C704B5DBDB72 /* Pods-NearbyTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NearbyTests.debug.xcconfig"; path = "Target Support Files/Pods-NearbyTests/Pods-NearbyTests.debug.xcconfig"; sourceTree = "<group>"; };
 		9A1DADAB2290D620008289C2 /* NearbyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NearbyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A1DADAD2290D620008289C2 /* NearbyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearbyUITests.swift; sourceTree = "<group>"; };
 		9A1DADAF2290D620008289C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9A1DADB72290E045008289C2 /* Identifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Identifiers.swift; sourceTree = "<group>"; };
 		9A3205BE2290721800E7911D /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		9A3205BF2290721800E7911D /* MapViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MapViewController.xib; sourceTree = "<group>"; };
 		9A3205C222909BB200E7911D /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
@@ -74,7 +78,7 @@
 		D3F5915E8B830137611240C7 /* Pods_Nearby.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Nearby.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4FC7A1281C57E67C9154912 /* Pods-NearbyUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NearbyUITests.debug.xcconfig"; path = "Target Support Files/Pods-NearbyUITests/Pods-NearbyUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		E5688FCF87838A2C002C8161 /* Pods-NearbyTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NearbyTests.release.xcconfig"; path = "Target Support Files/Pods-NearbyTests/Pods-NearbyTests.release.xcconfig"; sourceTree = "<group>"; };
-		F666E625997580C4A5AE50D1 /* Pods_NearbyTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NearbyTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA0AAB3D91479FF861DE21A3 /* libPods-NearbyUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-NearbyUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,7 +86,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				061338A656F25F0E3F6A8F9B /* Pods_NearbyUITests.framework in Frameworks */,
+				06D481B3AED2782530D908CD /* libPods-NearbyUITests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -98,7 +102,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				08863230CD1EF4C6AB0379F9 /* Pods_NearbyTests.framework in Frameworks */,
+				3C331AF1C705FC8AF12A1E98 /* libPods-NearbyTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -109,8 +113,8 @@
 			isa = PBXGroup;
 			children = (
 				D3F5915E8B830137611240C7 /* Pods_Nearby.framework */,
-				F666E625997580C4A5AE50D1 /* Pods_NearbyTests.framework */,
-				460167CA8C95A0781BF026A0 /* Pods_NearbyUITests.framework */,
+				266BAB7C9B4C4EFA8863A05A /* libPods-NearbyTests.a */,
+				EA0AAB3D91479FF861DE21A3 /* libPods-NearbyUITests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -169,6 +173,7 @@
 				9A924C3122900F6F00463602 /* MockService.swift */,
 				9A924C3022900F6F00463602 /* NearbyTests-Bridging-Header.h */,
 				9A924C332290352C00463602 /* MapViewControllerTests.swift */,
+				9A1DADB72290E045008289C2 /* Identifiers.swift */,
 			);
 			path = NearbyTests;
 			sourceTree = "<group>";
@@ -443,6 +448,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9A1DADB92290E049008289C2 /* Identifiers.swift in Sources */,
 				9A1DADAE2290D620008289C2 /* NearbyUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -459,6 +465,7 @@
 				9A924C28228C899900463602 /* BaseViewController.swift in Sources */,
 				9A924C2A228CA5E200463602 /* Service.swift in Sources */,
 				9A924C20228C869400463602 /* ResponseModel.swift in Sources */,
+				9A1DADBA2290E04A008289C2 /* Identifiers.swift in Sources */,
 				9A924C2F22900EA300463602 /* NetworkService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -468,6 +475,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9A924C3222900F6F00463602 /* MockService.swift in Sources */,
+				9A1DADB82290E045008289C2 /* Identifiers.swift in Sources */,
 				9A924C342290352C00463602 /* MapViewControllerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

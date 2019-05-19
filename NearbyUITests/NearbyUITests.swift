@@ -19,10 +19,20 @@ class NearbyUITests: XCTestCase {
         continueAfterFailure = false
     }
     
-    func testPinsLoaded() {
-        app.launchArguments = [happyFlowParameter]
-        app.launch()
-        
-    }
+//    func testSearchAgain() {
+//        app.launchArguments = [happyFlowParameter]
+//        app.launch()
+//        
+//        let searchHereButton = app.buttons[Identifier.searchHereButton.rawValue]
+//        
+//        let map = app.maps.element
+//        
+//        let start = map.coordinate(withNormalizedOffset: CGVector(dx: 0, dy: 0))
+//        let finish = map.coordinate(withNormalizedOffset: CGVector(dx: 0, dy: 6))
+//        start.press(forDuration: 0, thenDragTo: finish)
+//        
+//        XCTAssertTrue(searchHereButton.isHittable)
+//        
+//    }
 
 }

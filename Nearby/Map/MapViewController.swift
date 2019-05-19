@@ -28,7 +28,11 @@ class MapViewController: BaseViewController {
         }
     }
     
-    @IBOutlet weak var searchHereButton: UIButton!
+    @IBOutlet weak var searchHereButton: UIButton! {
+        didSet {
+            searchHereButton.accessibilityIdentifier = Identifier.searchHereButton.rawValue
+        }
+    }
     
     @IBAction func searchHereAction(_ sender: Any) {
         searchHereButton.isHidden = true
