@@ -66,8 +66,9 @@ class MapViewController: BaseViewController {
             strongSelf.hideLoader()
             
             guard let venues = try? result.get() else {
-                // TODO:- show error
+                
                 DispatchQueue.main.async {
+                    strongSelf.showAlert(title: "Could not load venues", message: "Please try again")
                     strongSelf.searchHereButton.isHidden = false
                 }
                 
@@ -79,7 +80,10 @@ class MapViewController: BaseViewController {
     }
     
     private func showDetail(for venue: Venue) {
+        let title = venue.name
         
+        let message = venue.location.formattedAddress.joined(separator: "\n")
+        showAlert(title: title, message: message)
     }
     
 }

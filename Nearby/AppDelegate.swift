@@ -25,8 +25,8 @@ private extension ProcessInfo {
     var currentService: Service {
         if arguments.contains("testHappyFlow") {
             return MockSuccessService.shared
-        } else if arguments.contains("testHappyFlow") {
-            return MockSuccessService.shared
+        } else if arguments.contains("testErrorFlow") {
+            return MockErrorService.shared
         } else {
             return NetworkService.shared
         }
