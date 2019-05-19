@@ -49,6 +49,16 @@
                ReferencedContainer = "container:Nearby.xcodeproj">
             </BuildableReference>
          </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "9A1DADAA2290D620008289C2"
+               BuildableName = "NearbyUITests.xctest"
+               BlueprintName = "NearbyUITests"
+               ReferencedContainer = "container:Nearby.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference

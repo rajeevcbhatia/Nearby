@@ -27,7 +27,7 @@ class MapAnnotation: NSObject, MKAnnotation {
     static func annotations(for venue: [Venue]) -> [MapAnnotation] {
         
         return venue.map { (venue) -> MapAnnotation in
-            return MapAnnotation.init(id: venue.id, title: venue.name, subtitle: venue.location.address, coordinate: venue.location.coordinate)
+            return MapAnnotation(id: venue.id, title: venue.name, subtitle: venue.location.address ?? "", coordinate: venue.location.coordinate)
         }
         
     }

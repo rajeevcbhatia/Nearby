@@ -13,9 +13,23 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
 
-        let vc = MapViewController(service: NetworkService.shared)
+        let vc = MapViewController(service: ProcessInfo.processInfo.currentService)
         window?.rootViewController = vc
 
         return true
     }
+}
+
+private extension ProcessInfo {
+    
+    var currentService: Service {
+        if arguments.contains("testHappyFlow") {
+            return MockSuccessService.shared
+        } else if arguments.contains("testHappyFlow") {
+            return MockSuccessService.shared
+        } else {
+            return NetworkService.shared
+        }
+    }
+    
 }

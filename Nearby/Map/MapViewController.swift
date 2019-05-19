@@ -22,9 +22,17 @@ class MapViewController: BaseViewController {
             let coordinateRegion = MKCoordinateRegion(center: startLocation, latitudinalMeters: CLLocationDistance(integerLiteral: 5000), longitudinalMeters: CLLocationDistance(integerLiteral: 5000))
             mapView.setRegion(coordinateRegion, animated: true)
             mapView.delegate = self
+            mapView.isZoomEnabled = false
             
             fetchVenuesForCurrentCenter()
         }
+    }
+    
+    @IBOutlet weak var searchHereButton: UIButton!
+    
+    @IBAction func searchHereAction(_ sender: Any) {
+        searchHereButton.isHidden = true
+        fetchVenuesForCurrentCenter()
     }
     
     private let service: Service
@@ -49,14 +57,16 @@ class MapViewController: BaseViewController {
     private func fetchVenuesForCurrentCenter() {
         self.showLoader()
         
-        let coordinate = mapView.centerCoordinate
-        
-        service.fetchVenues(latitude: coordinate.latitude, longitude: coordinate.longitude) { [weak self] (result) in
+        service.fetchVenues(latitude: mapView.centerCoordinate.latitude,longitude: mapView.centerCoordinate.longitude) { [weak self] (result) in
             guard let strongSelf = self else { return }
             strongSelf.hideLoader()
             
             guard let venues = try? result.get() else {
                 // TODO:- show error
+                DispatchQueue.main.async {
+                    strongSelf.searchHereButton.isHidden = false
+                }
+                
                 return
             }
             
@@ -80,5 +90,22 @@ extension MapViewController: MKMapViewDelegate {
         }) else { return }
         
         showDetail(for: currentVenue)
+    }
+    
+    func mapViewDidChangeVisibleRegion(_ mapView: MKMapView) {
+        searchHereButton.isHidden = false
+    }
+    
+}
+
+typealias Edges = (ne: CLLocationCoordinate2D, sw: CLLocationCoordinate2D)
+
+private extension MKMapView {
+    func edgePoints() -> Edges {
+        let nePoint = CGPoint(x: self.bounds.maxX, y: self.bounds.origin.y)
+        let swPoint = CGPoint(x: self.bounds.minX, y: self.bounds.maxY)
+        let neCoord = self.convert(nePoint, toCoordinateFrom: self)
+        let swCoord = self.convert(swPoint, toCoordinateFrom: self)
+        return (ne: neCoord, sw: swCoord)
     }
 }

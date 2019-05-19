@@ -7,7 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		061338A656F25F0E3F6A8F9B /* Pods_NearbyUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 460167CA8C95A0781BF026A0 /* Pods_NearbyUITests.framework */; };
 		08863230CD1EF4C6AB0379F9 /* Pods_NearbyTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F666E625997580C4A5AE50D1 /* Pods_NearbyTests.framework */; };
+		9A1DADAE2290D620008289C2 /* NearbyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A1DADAD2290D620008289C2 /* NearbyUITests.swift */; };
+		9A1DADB62290D738008289C2 /* MockService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A924C3122900F6F00463602 /* MockService.swift */; };
 		9A3205C02290721800E7911D /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A3205BE2290721800E7911D /* MapViewController.swift */; };
 		9A3205C12290721800E7911D /* MapViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A3205BF2290721800E7911D /* MapViewController.xib */; };
 		9A3205C322909BB200E7911D /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A3205C222909BB200E7911D /* main.swift */; };
@@ -25,6 +28,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		9A1DADB02290D620008289C2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9A924BE6228C6D2100463602 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9A924BED228C6D2100463602;
+			remoteInfo = Nearby;
+		};
 		9A924C03228C6D2400463602 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 9A924BE6228C6D2100463602 /* Project object */;
@@ -39,6 +49,9 @@
 		460167CA8C95A0781BF026A0 /* Pods_NearbyUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NearbyUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		645D70C7B3D4F6B79832028F /* Pods-NearbyUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NearbyUITests.release.xcconfig"; path = "Target Support Files/Pods-NearbyUITests/Pods-NearbyUITests.release.xcconfig"; sourceTree = "<group>"; };
 		8094A9879B33C704B5DBDB72 /* Pods-NearbyTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NearbyTests.debug.xcconfig"; path = "Target Support Files/Pods-NearbyTests/Pods-NearbyTests.debug.xcconfig"; sourceTree = "<group>"; };
+		9A1DADAB2290D620008289C2 /* NearbyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NearbyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9A1DADAD2290D620008289C2 /* NearbyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearbyUITests.swift; sourceTree = "<group>"; };
+		9A1DADAF2290D620008289C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9A3205BE2290721800E7911D /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		9A3205BF2290721800E7911D /* MapViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MapViewController.xib; sourceTree = "<group>"; };
 		9A3205C222909BB200E7911D /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
@@ -65,6 +78,14 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		9A1DADA82290D620008289C2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				061338A656F25F0E3F6A8F9B /* Pods_NearbyUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		9A924BEB228C6D2100463602 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -94,11 +115,21 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		9A1DADAC2290D620008289C2 /* NearbyUITests */ = {
+			isa = PBXGroup;
+			children = (
+				9A1DADAD2290D620008289C2 /* NearbyUITests.swift */,
+				9A1DADAF2290D620008289C2 /* Info.plist */,
+			);
+			path = NearbyUITests;
+			sourceTree = "<group>";
+		};
 		9A924BE5228C6D2100463602 = {
 			isa = PBXGroup;
 			children = (
 				9A924BF0228C6D2200463602 /* Nearby */,
 				9A924C05228C6D2400463602 /* NearbyTests */,
+				9A1DADAC2290D620008289C2 /* NearbyUITests */,
 				9A924BEF228C6D2200463602 /* Products */,
 				CC9041E5DB5C9FDAC081A14D /* Pods */,
 				507679ED32645D8882F0B070 /* Frameworks */,
@@ -110,6 +141,7 @@
 			children = (
 				9A924BEE228C6D2200463602 /* Nearby.app */,
 				9A924C02228C6D2400463602 /* NearbyTests.xctest */,
+				9A1DADAB2290D620008289C2 /* NearbyUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -192,6 +224,25 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		9A1DADAA2290D620008289C2 /* NearbyUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9A1DADB42290D620008289C2 /* Build configuration list for PBXNativeTarget "NearbyUITests" */;
+			buildPhases = (
+				6797CC013C369EC40E5FF96D /* [CP] Check Pods Manifest.lock */,
+				9A1DADA72290D620008289C2 /* Sources */,
+				9A1DADA82290D620008289C2 /* Frameworks */,
+				9A1DADA92290D620008289C2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9A1DADB12290D620008289C2 /* PBXTargetDependency */,
+			);
+			name = NearbyUITests;
+			productName = NearbyUITests;
+			productReference = 9A1DADAB2290D620008289C2 /* NearbyUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 		9A924BED228C6D2100463602 /* Nearby */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9A924C16228C6D2400463602 /* Build configuration list for PBXNativeTarget "Nearby" */;
@@ -240,6 +291,10 @@
 				LastUpgradeCheck = 1020;
 				ORGANIZATIONNAME = rajeev;
 				TargetAttributes = {
+					9A1DADAA2290D620008289C2 = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = 9A924BED228C6D2100463602;
+					};
 					9A924BED228C6D2100463602 = {
 						CreatedOnToolsVersion = 10.2.1;
 					};
@@ -265,11 +320,19 @@
 			targets = (
 				9A924BED228C6D2100463602 /* Nearby */,
 				9A924C01228C6D2400463602 /* NearbyTests */,
+				9A1DADAA2290D620008289C2 /* NearbyUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		9A1DADA92290D620008289C2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		9A924BEC228C6D2100463602 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -305,6 +368,28 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Nearby/Pods-Nearby-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6797CC013C369EC40E5FF96D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NearbyUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		7E1E59AC00CC9202993D495C /* [CP] Check Pods Manifest.lock */ = {
@@ -354,12 +439,21 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		9A1DADA72290D620008289C2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9A1DADAE2290D620008289C2 /* NearbyUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		9A924BEA228C6D2100463602 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				9A924BF2228C6D2200463602 /* AppDelegate.swift in Sources */,
 				9A924C2C228CB6CA00463602 /* MapAnnotation.swift in Sources */,
+				9A1DADB62290D738008289C2 /* MockService.swift in Sources */,
 				9A3205C322909BB200E7911D /* main.swift in Sources */,
 				9A3205C02290721800E7911D /* MapViewController.swift in Sources */,
 				9A924C28228C899900463602 /* BaseViewController.swift in Sources */,
@@ -381,6 +475,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		9A1DADB12290D620008289C2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9A924BED228C6D2100463602 /* Nearby */;
+			targetProxy = 9A1DADB02290D620008289C2 /* PBXContainerItemProxy */;
+		};
 		9A924C04228C6D2400463602 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 9A924BED228C6D2100463602 /* Nearby */;
@@ -400,6 +499,44 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		9A1DADB22290D620008289C2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D4FC7A1281C57E67C9154912 /* Pods-NearbyUITests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = NearbyUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.rajeev.NearbyUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Nearby;
+			};
+			name = Debug;
+		};
+		9A1DADB32290D620008289C2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 645D70C7B3D4F6B79832028F /* Pods-NearbyUITests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = NearbyUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.rajeev.NearbyUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Nearby;
+			};
+			name = Release;
+		};
 		9A924C14228C6D2400463602 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -602,6 +739,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		9A1DADB42290D620008289C2 /* Build configuration list for PBXNativeTarget "NearbyUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9A1DADB22290D620008289C2 /* Debug */,
+				9A1DADB32290D620008289C2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		9A924BE9228C6D2100463602 /* Build configuration list for PBXProject "Nearby" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

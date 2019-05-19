@@ -27,8 +27,9 @@ struct Venue: Codable {
 }
 
 struct Location: Codable {
-    let address: String
+    let address: String?
     private let lat, lng: Double
+    let formattedAddress: [String]
     
     var coordinate: CLLocationCoordinate2D {
         return CLLocationCoordinate2D(latitude: CLLocationDegrees(lat), longitude: CLLocationDegrees(lng))

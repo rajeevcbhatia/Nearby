@@ -19,7 +19,7 @@ class MapViewControllerTests: XCTestCase {
     }
     
     func testVenuesLoaded() {
-        let service = MockSuccessService()
+        let service = MockSuccessService.shared
         mapVC = MapViewController(service: service)
         guard let mapVC = mapVC, let _ = mapVC.view else {
             XCTFail("startView not loaded")

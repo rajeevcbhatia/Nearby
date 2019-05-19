@@ -13,6 +13,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MapViewController" customModule="Nearby" customModuleProvider="target">
             <connections>
                 <outlet property="mapView" destination="NYW-Yk-ayw" id="hXD-47-3K3"/>
+                <outlet property="searchHereButton" destination="YZ7-bH-Xvg" id="yfY-86-lA2"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -24,13 +25,28 @@
                 <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="NYW-Yk-ayw">
                     <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                 </mapView>
+                <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YZ7-bH-Xvg">
+                    <rect key="frame" x="32" y="788" width="350" height="42"/>
+                    <color key="backgroundColor" red="0.22352941179999999" green="0.28627450980000002" blue="0.6705882353" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="42" id="Sqm-Wt-DPY"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                    <state key="normal" title="Search Here"/>
+                    <connections>
+                        <action selector="searchHereAction:" destination="-1" eventType="touchUpInside" id="33w-YC-KD8"/>
+                    </connections>
+                </button>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="NYW-Yk-ayw" secondAttribute="trailing" id="6VF-Cg-jKA"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="YZ7-bH-Xvg" secondAttribute="bottom" constant="32" id="9sj-A6-RVD"/>
                 <constraint firstItem="NYW-Yk-ayw" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="FlH-DG-ByO"/>
                 <constraint firstItem="NYW-Yk-ayw" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="bFo-rv-60X"/>
                 <constraint firstAttribute="bottom" secondItem="NYW-Yk-ayw" secondAttribute="bottom" id="eAU-Wd-sdP"/>
+                <constraint firstItem="YZ7-bH-Xvg" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="32" id="lqv-zW-fWZ"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="YZ7-bH-Xvg" secondAttribute="trailing" constant="32" id="wqy-Bs-YDM"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
         </view>
