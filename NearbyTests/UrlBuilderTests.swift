@@ -13,9 +13,11 @@ class UrlBuilderTests: XCTestCase {
 
     func testSearchUrlGenerated() {
         
-        let generatedUrlString = UrlBuilder.searchVenue(latitude: 0, longitude: 0).path
+        let testLat = 0.0
+        let testLong = 0.0
+        let generatedUrlString = UrlBuilder.searchVenue(latitude: testLat, longitude: testLong).path
         
-        let expectedUrlString = "https://api.foursquare.com/v2/venues/search?client_id=KOGEX4EPMA3OBMOUIJGP22CBCXJVQ1BRLH3W5GLDBB0C2C4L&client_secret=ED3CGJUY1PITOSOBLENAQBJB1TEBD5CGQORLKKOO5WXRLREO&scenario=browse&categoryId=4d4b7105d754a06374d81259&v=\(UrlValues.version)&ll=0.0,0.0&radius=4000"
+        let expectedUrlString = "\(UrlBase.base.rawValue)/\(UrlBase.search)?\(UrlParams.clientId.rawValue)=\(UrlValues.clientId.rawValue)&\(UrlParams.clientSecret.rawValue)=\(UrlValues.clientSecret.rawValue)&\(UrlParams.scenario.rawValue)=\(UrlValues.browse.rawValue)&\(UrlParams.categoryId.rawValue)=\(UrlValues.restaurantCategoryId.rawValue)&\(UrlParams.version.rawValue)=\(UrlValues.version)&\(UrlParams.coordinate.rawValue)=\(testLat),\(testLong)&\(UrlParams.radius.rawValue)=\(UrlValues.radius.rawValue)"
         
         XCTAssertEqual(generatedUrlString, expectedUrlString, "Url builder did not generate correct search Url")
     }
