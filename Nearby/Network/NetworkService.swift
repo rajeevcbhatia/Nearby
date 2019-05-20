@@ -17,9 +17,7 @@ class NetworkService: Service {
     
     func fetchVenues(latitude: Double, longitude: Double,completion: @escaping (Result<[Venue], ConnectionError>) -> Void) {
         
-        let versionString = DateFormatter().version
-        
-        let urlString = UrlBuilder.searchVenue(version: versionString, latitude: latitude, longitude: longitude).path
+        let urlString = UrlBuilder.searchVenue(latitude: latitude, longitude: longitude).path
         
         guard let url = URL(string: urlString) else {
             completion(.failure(ConnectionError.couldNotGetDetails))
@@ -40,11 +38,4 @@ class NetworkService: Service {
     }
     
     
-}
-
-private extension DateFormatter {
-    var version: String {
-        dateFormat = "YYYYMMDD"
-        return string(from: Date())
-    }
 }

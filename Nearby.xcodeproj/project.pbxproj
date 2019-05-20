@@ -18,6 +18,9 @@
 		9A1DADE922933740008289C2 /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A1DADE722933740008289C2 /* DetailViewController.xib */; };
 		9A1DADEB229352C1008289C2 /* DetailViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A1DADEA229352C1008289C2 /* DetailViewControllerTests.swift */; };
 		9A1DADEF22935BC3008289C2 /* UrlBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A1DADEE22935BC3008289C2 /* UrlBuilder.swift */; };
+		9A1DADF12293632F008289C2 /* UrlBuilderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A1DADF02293632F008289C2 /* UrlBuilderTests.swift */; };
+		9A1DADF322936396008289C2 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A1DADF222936396008289C2 /* Constants.swift */; };
+		9A1DADF4229363AA008289C2 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A1DADF222936396008289C2 /* Constants.swift */; };
 		9A3205C02290721800E7911D /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A3205BE2290721800E7911D /* MapViewController.swift */; };
 		9A3205C12290721800E7911D /* MapViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A3205BF2290721800E7911D /* MapViewController.xib */; };
 		9A3205C322909BB200E7911D /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A3205C222909BB200E7911D /* main.swift */; };
@@ -64,6 +67,8 @@
 		9A1DADE722933740008289C2 /* DetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailViewController.xib; sourceTree = "<group>"; };
 		9A1DADEA229352C1008289C2 /* DetailViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewControllerTests.swift; sourceTree = "<group>"; };
 		9A1DADEE22935BC3008289C2 /* UrlBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UrlBuilder.swift; sourceTree = "<group>"; };
+		9A1DADF02293632F008289C2 /* UrlBuilderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UrlBuilderTests.swift; sourceTree = "<group>"; };
+		9A1DADF222936396008289C2 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		9A3205BE2290721800E7911D /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		9A3205BF2290721800E7911D /* MapViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MapViewController.xib; sourceTree = "<group>"; };
 		9A3205C222909BB200E7911D /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
@@ -193,6 +198,7 @@
 				9A924C3122900F6F00463602 /* MockService.swift */,
 				9A924C332290352C00463602 /* MapViewControllerTests.swift */,
 				9A1DADEA229352C1008289C2 /* DetailViewControllerTests.swift */,
+				9A1DADF02293632F008289C2 /* UrlBuilderTests.swift */,
 			);
 			path = NearbyTests;
 			sourceTree = "<group>";
@@ -212,6 +218,7 @@
 				9A924C27228C899900463602 /* BaseViewController.swift */,
 				9A924C29228CA5E200463602 /* Service.swift */,
 				9A1DADEE22935BC3008289C2 /* UrlBuilder.swift */,
+				9A1DADF222936396008289C2 /* Constants.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -485,6 +492,7 @@
 				9A3205C322909BB200E7911D /* main.swift in Sources */,
 				9A3205C02290721800E7911D /* MapViewController.swift in Sources */,
 				9A924C28228C899900463602 /* BaseViewController.swift in Sources */,
+				9A1DADF322936396008289C2 /* Constants.swift in Sources */,
 				9A924C2A228CA5E200463602 /* Service.swift in Sources */,
 				9A924C20228C869400463602 /* ResponseModel.swift in Sources */,
 				9A1DADEF22935BC3008289C2 /* UrlBuilder.swift in Sources */,
@@ -501,6 +509,8 @@
 				9A1DADB82290E045008289C2 /* Identifiers.swift in Sources */,
 				9A924C342290352C00463602 /* MapViewControllerTests.swift in Sources */,
 				9A1DADEB229352C1008289C2 /* DetailViewControllerTests.swift in Sources */,
+				9A1DADF12293632F008289C2 /* UrlBuilderTests.swift in Sources */,
+				9A1DADF4229363AA008289C2 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

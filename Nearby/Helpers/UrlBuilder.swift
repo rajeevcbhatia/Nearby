@@ -10,20 +10,40 @@ import Foundation
 
 enum UrlBuilder {
     
-    case searchVenue(version: String, latitude: Double, longitude: Double)
+    case searchVenue(latitude: Double, longitude: Double)
     
     var path: String {
         
-        let base = "https://api.foursquare.com/v2/venues"
-        let clientSecret = "ED3CGJUY1PITOSOBLENAQBJB1TEBD5CGQORLKKOO5WXRLREO"
-        let clientId = "KOGEX4EPMA3OBMOUIJGP22CBCXJVQ1BRLH3W5GLDBB0C2C4L"
-        
         switch self {
             
-        case .searchVenue(version: let version, latitude: let latitude, longitude: let longitude):
+        case .searchVenue(latitude: let latitude, longitude: let longitude):
             
-            return "\(base)/search?client_id=\(clientId)&client_secret=\(clientSecret)&scenario=browse&categoryId=4d4b7105d754a06374d81259&v=\(version)&ll=\(latitude),\(longitude)&radius=4000"
-            
+        let searchUrlString = urlString(with: UrlBase.search, specifiers: [
+                (UrlParams.clientId, UrlValues.clientId.rawValue),
+                (UrlParams.clientSecret, UrlValues.clientSecret.rawValue),
+                (UrlParams.scenario, UrlValues.browse.rawValue),
+                (UrlParams.categoryId, UrlValues.restaurantCategoryId.rawValue),
+                (UrlParams.version, UrlValues.version),
+                (UrlParams.coordinate, "\(latitude),\(longitude)"),
+                (UrlParams.radius, UrlValues.radius.rawValue)])
+        
+            return searchUrlString
         }
     }
+    
+    private func urlString(with endpoint: UrlBase, specifiers: [UrlSpecifier]) -> String {
+        
+        var urlString = "\(UrlBase.base.rawValue)/\(endpoint)"
+        for (index, specifier) in specifiers.enumerated() {
+            
+            let joiner =  index == 0 ? "?" : "&"
+            urlString += "\(joiner)\(specifier.param.rawValue)=\(specifier.value)"
+            
+        }
+        
+        return urlString
+        
+    }
 }
+
+typealias UrlSpecifier = (param: UrlParams, value: String)
