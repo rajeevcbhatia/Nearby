@@ -14,7 +14,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
 
         let vc = MapViewController(service: ProcessInfo.processInfo.currentService)
-        window?.rootViewController = vc
+        let navigationController = UINavigationController(rootViewController: vc)
+        window?.rootViewController = navigationController
 
         return true
     }

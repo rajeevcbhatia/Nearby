@@ -14,6 +14,9 @@
 		9A1DADB82290E045008289C2 /* Identifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A1DADB72290E045008289C2 /* Identifiers.swift */; };
 		9A1DADB92290E049008289C2 /* Identifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A1DADB72290E045008289C2 /* Identifiers.swift */; };
 		9A1DADBA2290E04A008289C2 /* Identifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A1DADB72290E045008289C2 /* Identifiers.swift */; };
+		9A1DADE822933740008289C2 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A1DADE622933740008289C2 /* DetailViewController.swift */; };
+		9A1DADE922933740008289C2 /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A1DADE722933740008289C2 /* DetailViewController.xib */; };
+		9A1DADEB229352C1008289C2 /* DetailViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A1DADEA229352C1008289C2 /* DetailViewControllerTests.swift */; };
 		9A3205C02290721800E7911D /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A3205BE2290721800E7911D /* MapViewController.swift */; };
 		9A3205C12290721800E7911D /* MapViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A3205BF2290721800E7911D /* MapViewController.xib */; };
 		9A3205C322909BB200E7911D /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A3205C222909BB200E7911D /* main.swift */; };
@@ -56,6 +59,9 @@
 		9A1DADAD2290D620008289C2 /* NearbyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearbyUITests.swift; sourceTree = "<group>"; };
 		9A1DADAF2290D620008289C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9A1DADB72290E045008289C2 /* Identifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Identifiers.swift; sourceTree = "<group>"; };
+		9A1DADE622933740008289C2 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		9A1DADE722933740008289C2 /* DetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailViewController.xib; sourceTree = "<group>"; };
+		9A1DADEA229352C1008289C2 /* DetailViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewControllerTests.swift; sourceTree = "<group>"; };
 		9A3205BE2290721800E7911D /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		9A3205BF2290721800E7911D /* MapViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MapViewController.xib; sourceTree = "<group>"; };
 		9A3205C222909BB200E7911D /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
@@ -128,6 +134,15 @@
 			path = NearbyUITests;
 			sourceTree = "<group>";
 		};
+		9A1DADE52293372A008289C2 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				9A1DADE622933740008289C2 /* DetailViewController.swift */,
+				9A1DADE722933740008289C2 /* DetailViewController.xib */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
 		9A924BE5228C6D2100463602 = {
 			isa = PBXGroup;
 			children = (
@@ -153,6 +168,7 @@
 		9A924BF0228C6D2200463602 /* Nearby */ = {
 			isa = PBXGroup;
 			children = (
+				9A1DADE52293372A008289C2 /* Detail */,
 				9A924C2D22900E9100463602 /* Network */,
 				9A924C24228C86EC00463602 /* Map */,
 				9A924C23228C86E600463602 /* Helpers */,
@@ -174,6 +190,7 @@
 				9A924C3022900F6F00463602 /* NearbyTests-Bridging-Header.h */,
 				9A924C332290352C00463602 /* MapViewControllerTests.swift */,
 				9A1DADB72290E045008289C2 /* Identifiers.swift */,
+				9A1DADEA229352C1008289C2 /* DetailViewControllerTests.swift */,
 			);
 			path = NearbyTests;
 			sourceTree = "<group>";
@@ -345,6 +362,7 @@
 				9A924BFC228C6D2400463602 /* LaunchScreen.storyboard in Resources */,
 				9A924BF9228C6D2400463602 /* Assets.xcassets in Resources */,
 				9A3205C12290721800E7911D /* MapViewController.xib in Resources */,
+				9A1DADE922933740008289C2 /* DetailViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -457,6 +475,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9A1DADE822933740008289C2 /* DetailViewController.swift in Sources */,
 				9A924BF2228C6D2200463602 /* AppDelegate.swift in Sources */,
 				9A924C2C228CB6CA00463602 /* MapAnnotation.swift in Sources */,
 				9A1DADB62290D738008289C2 /* MockService.swift in Sources */,
@@ -477,6 +496,7 @@
 				9A924C3222900F6F00463602 /* MockService.swift in Sources */,
 				9A1DADB82290E045008289C2 /* Identifiers.swift in Sources */,
 				9A924C342290352C00463602 /* MapViewControllerTests.swift in Sources */,
+				9A1DADEB229352C1008289C2 /* DetailViewControllerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -51,6 +51,11 @@ class MapViewController: BaseViewController {
         fatalError("init(coder:) has not been implemented")
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        navigationController?.setNavigationBarHidden(true, animated: false)
+    }
+    
     private func showAnnotations(venues: [Venue]) {
         DispatchQueue.main.async { [weak self] in
             self?.mapView.removeAnnotations(self?.mapView.annotations ?? [])
@@ -80,10 +85,8 @@ class MapViewController: BaseViewController {
     }
     
     private func showDetail(for venue: Venue) {
-        let title = venue.name
-        
-        let message = venue.location.formattedAddress.joined(separator: "\n")
-        showAlert(title: title, message: message)
+        let detailVC = DetailViewController(venue: venue)
+        navigationController?.pushViewController(detailVC, animated: true)
     }
     
 }
